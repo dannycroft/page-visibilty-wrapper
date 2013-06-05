@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Hidden Test</title>
+    <script src="src/PageVisibility.js"></script>
+</head>
+<body>
+    <h4>Page Visibilty Status History:</h4>
+    <ul id="status"></ul>
+    <script type="text/javascript">
+        function template() {
+            var li = document.createElement("li");
+            li.innerHTML = new Date() + ": " + PageVisibility.getState();
+            return li;
+        }
+        if (PageVisibility.isSupported()) {
+            PageVisibility.onStatusChange( function(event){
+                document.getElementById("status").appendChild(template());
+            });
+        }
+    </script>
+</body>
+</html>
