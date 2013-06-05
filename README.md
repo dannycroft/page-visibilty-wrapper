@@ -5,10 +5,11 @@ Page Visibility wrapper. Exposing and normalising an API for detecting if and wh
 
 Example
 =======
+HTML
 ```html
     <ul id="status"></ul>
 ```
-
+JavaScript
 ```javascript
     function template() {
         var li = document.createElement("li");
@@ -21,6 +22,11 @@ Example
         });
     }
 ```
+Output
+* Wed Jun 05 2013 22:17:28 GMT+0100 (BST): hidden
+* Wed Jun 05 2013 22:17:34 GMT+0100 (BST): visible
+* Wed Jun 05 2013 22:17:34 GMT+0100 (BST): hidden
+* Wed Jun 05 2013 22:25:38 GMT+0100 (BST): visible
 
 Support
 =======
