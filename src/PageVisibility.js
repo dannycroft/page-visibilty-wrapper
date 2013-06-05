@@ -1,8 +1,8 @@
 /**
  * Page Visibility wrapper. Exposing and normalising an API for detecting if and
- * when the page is visible and collecting it's current visibilty state
+ * when the page is visible and collecting it's current visibility state
  *
- * @param  {Object} self PageVisibilty helper object
+ * @param  {Object} self PageVisibility helper object
  * @return {Object}
  */
 var PageVisibility = (function(self) {
