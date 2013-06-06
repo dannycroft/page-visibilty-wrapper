@@ -16,8 +16,9 @@ JavaScript
         li.innerHTML = new Date() + ": " + PageVisibility.getState();
         return li;
     }
+    
     if (PageVisibility.isSupported()) {
-        PageVisibility.onStatusChange( function(){
+        PageVisibility.onStatusChange( function(event) {
             document.getElementById("status").appendChild(template());
         });
     }
