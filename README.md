@@ -1,4 +1,4 @@
-Page Visibility Wrapper (WIP)
+Page Visibility Wrapper
 ============
 
 Exposing and normalising an API for detecting if/when the page is visible and collecting it's current visibility state
